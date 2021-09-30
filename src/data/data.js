@@ -235,16 +235,7 @@ Number([,]); // -> 0***
     title: "JS Is Weird", //首页标题文本
     startContent: "JavaScript is a great programming language, but thanks to the fact that its initial release was built in only ten days back in 1995, coupled with the fact that JS is backward-compatible, it's also a bit weird. It doesn't always behave the way you might think. In this quiz, you'll be shown 25 quirky expressions and will have to guess the output. Even if you're a JS developer, most of this syntax is probably, and hopefully, not something you use in your daily life.", //首页段落文本
     endContent: `
-      I hope you thought this little quiz was fun, and, hopefully, you even learned something new. 
-      This quiz was made by [Jacob Bergdahl](https://jacobbergdahl.com/). 
-      If you have any suggestions, corrections, or feedback, do send me an [e-mail](mailto:854806732@qq.com).
-      I'm sure I've made some mistakes! 
-      If you want more of this, I'd recommend checking out [this GitHub repository by Denys Dovhan](https://github.com/denysdovhan/wtfjs), 
-      which is full of funny and tricky JavaScript examples. 
-      This repository is part of what inspired me to create this quiz. 
-      If you want to go deeper, you can always grab a lantern and head into the [depths of the ECMAScript publications](https://www.ecma-international.org/publications-and-standards/standards/). 
-      Have fun in there!
-      <blockquote>Special Note:This website inspired by <a href="https://jsisweird.com/" target="blank">https://jsisweird.com/</a></blockquote>
+      <blockquote>Special Note:This website inspired by <a href="https://mp.weixin.qq.com/s/W4EJa073rQeSaXQKL1VwmA" target="blank">https://mp.weixin.qq.com/s/W4EJa073rQeSaXQKL1VwmA</a></blockquote>
     `, //解析页段落文本
     startBtn: "let's start", //首页开始按钮文本
     endBtn: "Start over", //解析页重新开始文本
@@ -463,12 +454,7 @@ Number([,]); // -> 0***
     title: "JS很奇怪", //首页标题文本
     startContent: "JavaScript 是一种很棒的编程语言，但由于它的初始版本是在 1995 年仅用十天时间构建的，再加上 JS 向后兼容的事实，它也有点奇怪。 它并不总是像你想象的那样行事。 在这个测验中，您将看到 25 个古怪的表达式，并且必须猜测输出。 即使您是一名 JS 开发人员，大部分语法也可能并且希望不是您在日常生活中使用的东西。", //首页段落文本
     endContent: `
-      我希望你觉得这个小测验很有趣，希望你甚至学到了一些新东西。本测验由 [Jacob Bergdahl](https://jacobbergdahl.com/) 制作。
-      如果您有任何建议、更正或反馈，请发送给我 [邮件](mailto:854806732@qq.com)。我确定我犯了一些错误！
-      如果你想要更多这样的东西，我建议你查看 [通过 Denys Dovhan 创建的这个代码库](https://github.com/denysdovhan/wtfjs)，里面有很多有趣和棘手的 JavaScript 示例。
-      这个代码库是启发我创建这个测验的一部分。如果你想更深入，你可以随时提着灯笼进入[depths of the ECMAScript publications](https://www.ecma-international.org/publications-and-standards/standards/)。
-      你将在那里玩得开心！
-      <blockquote>特别说明:本网站启发于 <a href="https://jsisweird.com/" target="blank">https://jsisweird.com/</a></blockquote>
+      <blockquote>特别说明:本网站启发于 <a href="https://mp.weixin.qq.com/s/W4EJa073rQeSaXQKL1VwmA" target="blank">https://mp.weixin.qq.com/s/W4EJa073rQeSaXQKL1VwmA</a></blockquote>
     `, //解析页段落文本
     startBtn: "让我们开始吧", //首页开始按钮文本
     endBtn: "重来", //解析页重新开始文本

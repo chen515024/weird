@@ -75,40 +75,37 @@ const TopButtonComponent = React.forwardRef((props, ref) => {
 
 const TopComponent = props => {
   const btnRef = React.createRef();
-  let scrollElement = null, top_value = 0, timer = null;
+  let scrollElement = null;
 
   const updateTop = () => {
-    top_value -= 20;
-    scrollElement && (scrollElement.scrollTop = top_value);
-
-    if (top_value < 0) {
-      if (timer) clearTimeout(timer);
-      scrollElement && (scrollElement.scrollTop = 0);
+    if (scrollElement) {
+      scrollElement.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
       btnRef.current && (btnRef.current.style.display = "none");
-    } else {
-      timer = setTimeout(updateTop, 1);
     }
   }
 
   const topHandler = () => {
-    scrollElement = (props.scropllElement && props.scropllElement.current) || document.body;
-    top_value = scrollElement.scrollTop;
+    scrollElement = (props.scrollElement && props.scrollElement.current) || document.body;
     updateTop();
     props.onClick && props.onClick();
   }
 
   useEffect(() => {
-    const scrollElement = (props.scropllElement && props.scropllElement.current) || document.body;
-
+    const scrollElement = (props.scrollElement && props.scrollElement.current) || document.body;
     scrollElement && scrollElement.addEventListener('scroll', e => {
       const { scrollTop } = e.target;
       if (btnRef.current) {
         btnRef.current.style.display = scrollTop > 50 ? 'block' : 'none';
       }
     })
+
+    return scrollElement && scrollElement.removeEventListener('scroll', () => {});
   })
 
-  return <TopButtonComponent ref={btnRef} {...props} onClick={() => topHandler()}></TopButtonComponent>
+  return <TopButtonComponent ref={btnRef} {...props} onClick={topHandler}></TopButtonComponent>
 }
 
 export default TopComponent;
